@@ -1,7 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
 const rules = require('./webpack.rules');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const HOST = process.env.HOST || '0.0.0.0';
@@ -31,15 +30,7 @@ module.exports = {
   devtool: process.env.WEBPACK_DEVTOOL || 'eval-source-map',
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css',
-    }),
     new HtmlWebpackPlugin({
-      files: {
-        css: ['style.css'],
-        js: ['[chunkhash].js'],
-      },
       template: './public/assets/template.html',
       filename: 'index.html',
     }),
