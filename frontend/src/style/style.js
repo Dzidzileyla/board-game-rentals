@@ -31,13 +31,12 @@ export const Logo = styled.div`
 
 export const LoginText = styled.div`
   color: #0a071bff;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
 `;
 
 export const LoginDetailsText = styled.div`
   color: #5b5675ff;
-  font-size: 0.75rem;
 `;
 
 export const GoogleButton = styled.button`
@@ -49,4 +48,55 @@ export const GoogleButton = styled.button`
   border-width: 2px;
   border-color: #e1dfecff;
   border-style: solid;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const GoogleLogo = styled.div`
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #5037ebff;
+  border-radius: 100%;
+  margin: 0.75rem;
+`;
+
+export const GoogleButtonText = styled.div`
+  color: #0e0b1fff;
+  font-size: 1rem;
+`;
+
+export const LineSection = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Line = styled.div`
+  width: 100%;
+  height: 1px;
+
+  background-color: #bcb8d0ff;
+`;
+
+export const LineText = styled.div`
+  color: #bcb8d0ff;
+  font-size: 0.75rem;
+  width: 300px;
+`;
+
+export const LoginForm = styled.form``;
+
+export const EmailLabel = styled.label`
+  color: #0b081cff;
+`;
+
+export const EmailInput = styled.input`
+  color: #0b081cff;
+  width: 100%;
+  height: 50px;
+  font-size: 1rem;
+  padding-left: 20px;
+  border: 1px solid #e1dfecff;
 `;
