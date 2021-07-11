@@ -15,7 +15,11 @@ import {
   LineText,
   LoginForm,
   EmailLabel,
-  EmailInput
+  EmailInput,
+  RememberMeSection,
+  RememberMeCheckBox,
+  ForgetPassUrl,
+  LoginButton
 } from '../style/style';
 
 const LoginPage = () => {
@@ -39,7 +43,19 @@ const LoginPage = () => {
           </LineSection>
           <LoginForm>
             <EmailLabel>Email*</EmailLabel>
-            <EmailInput placeholder="mail@website.com"></EmailInput>
+            <EmailInput placeholder='mail@website.com'></EmailInput>
+            <EmailLabel>Password*</EmailLabel>
+            <EmailInput placeholder='Min. 8 characters'></EmailInput>
+            <RememberMeSection>
+              <RememberMeCheckBox type='checkbox'></RememberMeCheckBox>
+              <EmailLabel>Remember me</EmailLabel>
+              <ForgetPassUrl href="#">Forget password?</ForgetPassUrl>
+            </RememberMeSection>
+            <LoginButton>Login</LoginButton>
+            <EmailLabel>Not registered yet?</EmailLabel>
+            <EmailLabel style={{color: '#5037ebff', marginLeft: '2%'}}>Create an Account</EmailLabel>
+            <br/>
+            <EmailLabel style={{color: '#bcb8d0ff'}}>@2021 Felix All rights reserved.</EmailLabel>
           </LoginForm>
         </Main>
       </LeftSide>

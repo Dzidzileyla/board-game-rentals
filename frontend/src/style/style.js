@@ -100,3 +100,34 @@ export const EmailInput = styled.input`
   padding-left: 20px;
   border: 1px solid #e1dfecff;
 `;
+
+export const RememberMeSection = styled.div`
+  /* border: 1px solid red; */
+  margin-top: 3%;
+`;
+
+export const RememberMeCheckBox = styled.input`
+  margin-right: 2%;
+`;
+
+export const ForgetPassUrl = styled.a`
+  color: #5037ebff;
+  outline: none;
+  text-decoration: none;
+  float: right;
+  margin-right: 2%;
+`;
+
+export const LoginButton = styled.button`
+  /* color: #5037ebff;
+  outline: none;
+  text-decoration: none;
+  float: right;
+  margin-right: 2%; */
+  height: 50px;
+  width: 100%;
+  color: #FFF;
+  background-color: #5037ebff;
+  border: 0;
+  font-size: 1rem;
+`;
