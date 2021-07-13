@@ -2,11 +2,12 @@
   "name": "frontend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "author": "",
   "license": "ISC",
   "scripts": {
-    "start:dev": "webpack serve --progress --config webpack.dev.js",
+    "run:dev": "webpack serve --progress --config webpack.dev.js",
+    "build:dev": "webpack --progress --config webpack.dev.js",
     "eslint:run": "eslint src --ext .js --ext .jsx && eslint test --ext .js --ext .jsx",
     "eslint:fix": "eslint src --ext .js --ext .jsx --fix  && eslint test --ext .js --ext .jsx --fix",
     "cypress:open": "cypress open",
@@ -15,7 +16,7 @@
     "test:watch": "NODE_ENV=dev jest --watch",
     "storybook:start": "start-storybook -p 6006",
     "storybook:build": "build-storybook",
-    "styled:lint":"stylelint './src/**/*.js'"
+    "styled:lint": "stylelint './src/**/*.js'"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.8",
@@ -47,7 +48,8 @@
     "stylelint-processor-styled-components": "^1.10.0",
     "webpack": "^5.9.0",
     "webpack-cli": "^4.2.0",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "webpack-manifest-plugin": "^3.1.1"
   },
   "dependencies": {
     "enzyme-adapter-react-16": "^1.15.6",

@@ -1,32 +1,32 @@
 import styled from 'styled-components';
 
-export const LeftSide = styled.div`
-  /* background-color: #eee; */
-  width: 40%;
+export const Login = styled.div`
+  display: flex;
   height: 100%;
-  float: left;
-  /* display: inline-block; */
+`;
+
+export const LeftSide = styled.div`
+  width: 40%;
+  display: flex;
 `;
 
 export const RightSide = styled.div`
   background-color: #ddd;
   width: 60%;
-  height: 100%;
-  float: left;
-  /* display: inline-block; */
 `;
 
-export const Main = styled.div`
+export const Container = styled.div`
   width: 400px;
-  height: 100%;
-  /* border: 1px solid red; */
+  height: 850px;
+  border: 1px solid red;
+
   margin: auto;
 `;
 
 export const Logo = styled.div`
   width: 40;
   height: 50;
-  background-color: #5138eeff;
+  border: 1px solid #5138eeff;
 `;
 
 export const LoginText = styled.div`
@@ -119,14 +119,9 @@ export const ForgetPassUrl = styled.a`
 `;
 
 export const LoginButton = styled.button`
-  /* color: #5037ebff;
-  outline: none;
-  text-decoration: none;
-  float: right;
-  margin-right: 2%; */
   height: 50px;
   width: 100%;
-  color: #FFF;
+  color: #fff;
   background-color: #5037ebff;
   border: 0;
   font-size: 1rem;

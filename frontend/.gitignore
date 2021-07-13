@@ -16,3 +16,6 @@ cypress/videos
 # jest
 test/__snapshots__/*
 coverage
+
+# webpack
+dist

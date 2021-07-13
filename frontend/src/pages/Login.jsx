@@ -1,9 +1,10 @@
 import React from 'react';
 
 import {
+  Login,
   LeftSide,
   RightSide,
-  Main,
+  Container,
   Logo,
   LoginText,
   LoginDetailsText,
@@ -24,9 +25,9 @@ import {
 
 const LoginPage = () => {
   return (
-    <>
+    <Login>
       <LeftSide>
-        <Main>
+        <Container>
           <Logo></Logo>
           <LoginText>Login</LoginText>
           <LoginDetailsText>
@@ -57,10 +58,10 @@ const LoginPage = () => {
             <br/>
             <EmailLabel style={{color: '#bcb8d0ff'}}>@2021 Felix All rights reserved.</EmailLabel>
           </LoginForm>
-        </Main>
+        </Container>
       </LeftSide>
       <RightSide></RightSide>
-    </>
+    </Login>
   );
 };
 
