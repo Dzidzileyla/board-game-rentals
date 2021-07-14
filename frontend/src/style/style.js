@@ -18,25 +18,21 @@ export const RightSide = styled.div`
 export const Container = styled.div`
   width: 400px;
   height: 850px;
-  border: 1px solid red;
 
   margin: auto;
 `;
 
-export const Logo = styled.div`
-  width: 40;
+export const Link = styled.a``;
+
+export const LogoImage = styled.img`
+  width: 50;
   height: 50;
-  border: 1px solid #5138eeff;
 `;
 
 export const LoginText = styled.div`
   color: #0a071bff;
   font-size: 2rem;
   font-weight: bold;
-`;
-
-export const LoginDetailsText = styled.div`
-  color: #5b5675ff;
 `;
 
 export const GoogleButton = styled.button`
@@ -62,11 +58,6 @@ export const GoogleLogo = styled.div`
   margin: 0.75rem;
 `;
 
-export const GoogleButtonText = styled.div`
-  color: #0e0b1fff;
-  font-size: 1rem;
-`;
-
 export const LineSection = styled.div`
   display: flex;
   justify-content: center;
@@ -80,17 +71,7 @@ export const Line = styled.div`
   background-color: #bcb8d0ff;
 `;
 
-export const LineText = styled.div`
-  color: #bcb8d0ff;
-  font-size: 0.75rem;
-  width: 300px;
-`;
-
 export const LoginForm = styled.form``;
-
-export const EmailLabel = styled.label`
-  color: #0b081cff;
-`;
 
 export const EmailInput = styled.input`
   color: #0b081cff;

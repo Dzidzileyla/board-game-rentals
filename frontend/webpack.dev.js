@@ -22,7 +22,7 @@ module.exports = {
     clean: true,
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, 'public'),
     historyApiFallback: true,
     host: HOST,
     hot: true,
@@ -30,6 +30,7 @@ module.exports = {
     noInfo: true,
     port: PORT,
     open: true,
+    publicPath: '/'
   },
   devtool: process.env.WEBPACK_DEVTOOL || 'eval-source-map',
   plugins: [

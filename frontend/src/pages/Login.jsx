@@ -1,26 +1,23 @@
 import React from 'react';
+import Text from '../components/Text';
 
 import {
   Login,
   LeftSide,
   RightSide,
   Container,
-  Logo,
-  LoginText,
-  LoginDetailsText,
+  Link,
+  LogoImage,
   GoogleButton,
   GoogleLogo,
-  GoogleButtonText,
   LineSection,
   Line,
-  LineText,
   LoginForm,
-  EmailLabel,
   EmailInput,
   RememberMeSection,
   RememberMeCheckBox,
   ForgetPassUrl,
-  LoginButton
+  LoginButton,
 } from '../style/style';
 
 const LoginPage = () => {
@@ -28,35 +25,45 @@ const LoginPage = () => {
     <Login>
       <LeftSide>
         <Container>
-          <Logo></Logo>
-          <LoginText>Login</LoginText>
-          <LoginDetailsText>
+          <Link>
+            <LogoImage src='./logo.png' />
+          </Link>
+          <Text fontSize='2rem' fontWeight='bold'>
+            Login
+          </Text>
+          <Text color='#5b5675ff'>
             See your growth and get consulting support!
-          </LoginDetailsText>
+          </Text>
           <GoogleButton>
             <GoogleLogo></GoogleLogo>
-            <GoogleButtonText>Sign in with Google</GoogleButtonText>
+            <Text>Sign in with Google</Text>
           </GoogleButton>
           <LineSection>
             <Line></Line>
-            <LineText>or Sign in with Email</LineText>
+            <Text color='#bcb8d0ff' fontSize='0.75rem' style={{ width: 300 }}>
+              or Sign in with Email
+            </Text>
             <Line></Line>
           </LineSection>
           <LoginForm>
-            <EmailLabel>Email*</EmailLabel>
+            <Text color='#0b081cff'>Email*</Text>
             <EmailInput placeholder='mail@website.com'></EmailInput>
-            <EmailLabel>Password*</EmailLabel>
+            <Text color='#0b081cff'>Password*</Text>
             <EmailInput placeholder='Min. 8 characters'></EmailInput>
             <RememberMeSection>
               <RememberMeCheckBox type='checkbox'></RememberMeCheckBox>
-              <EmailLabel>Remember me</EmailLabel>
-              <ForgetPassUrl href="#">Forget password?</ForgetPassUrl>
+              <Text>Remember me</Text>
+              <ForgetPassUrl href='#'>Forget password?</ForgetPassUrl>
             </RememberMeSection>
             <LoginButton>Login</LoginButton>
-            <EmailLabel>Not registered yet?</EmailLabel>
-            <EmailLabel style={{color: '#5037ebff', marginLeft: '2%'}}>Create an Account</EmailLabel>
-            <br/>
-            <EmailLabel style={{color: '#bcb8d0ff'}}>@2021 Felix All rights reserved.</EmailLabel>
+            <Text>Not registered yet?</Text>
+            <Text style={{ color: '#5037ebff', marginLeft: '2%' }}>
+              Create an Account
+            </Text>
+            <br />
+            <Text style={{ color: '#bcb8d0ff' }}>
+              @2021 Felix All rights reserved.
+            </Text>
           </LoginForm>
         </Container>
       </LeftSide>
