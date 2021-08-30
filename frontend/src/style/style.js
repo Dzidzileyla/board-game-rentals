@@ -7,7 +7,9 @@ export const Login = styled.div`
 
 export const LeftSide = styled.div`
   width: 40%;
+
   display: flex;
+  flex-direction: column;
 `;
 
 export const RightSide = styled.div`
@@ -17,9 +19,14 @@ export const RightSide = styled.div`
 
 export const Container = styled.div`
   width: 400px;
-  height: 850px;
+  /* height: 850px; */
+  /* height: 80%; */
 
   margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
 `;
 
 export const Link = styled.a``;
@@ -33,29 +40,6 @@ export const LoginText = styled.div`
   color: #0a071bff;
   font-size: 2rem;
   font-weight: bold;
-`;
-
-export const GoogleButton = styled.button`
-  color: #0e0b1fff;
-  background-color: #fff;
-  font-size: 0.75rem;
-  width: 25rem;
-  height: 3.25rem;
-  border-width: 2px;
-  border-color: #e1dfecff;
-  border-style: solid;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const GoogleLogo = styled.div`
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: #5037ebff;
-  border-radius: 100%;
-  margin: 0.75rem;
 `;
 
 export const LineSection = styled.div`
@@ -85,6 +69,9 @@ export const EmailInput = styled.input`
 export const RememberMeSection = styled.div`
   /* border: 1px solid red; */
   margin-top: 3%;
+
+  display: flex;
+  flex-direction: row;
 `;
 
 export const RememberMeCheckBox = styled.input`
@@ -106,4 +93,15 @@ export const LoginButton = styled.button`
   background-color: #5037ebff;
   border: 0;
   font-size: 1rem;
+`;
+
+export const Text = styled.div`
+  color: ${props => props.color || 'black'};
+  font-size: ${props => props.fontSize || '1rem'};
+  font-weight: ${props => props.fontWeight || 'normal'};
+`;
+
+export const CreateAccount = styled.div`
+  display: flex;
+  flex-direction: row;
 `;
